@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
 @SpringBootApplication
 public class HeliosphereApiApplication {
 
@@ -14,6 +13,8 @@ public class HeliosphereApiApplication {
 		SpringApplication.run(HeliosphereApiApplication.class, args);
 	}
 
+
+  @RequestMapping("/")
 	public String index() {
 		return "Greetings from Spring Boot!";
 	}
