@@ -6,4 +6,6 @@ import dev.pedrolobo.planets.entity.PlanetEntity;
 
 public interface IPlanetRepository extends JpaRepository<PlanetEntity, Long> {
 
+  boolean existsByName(String name);
+
 }

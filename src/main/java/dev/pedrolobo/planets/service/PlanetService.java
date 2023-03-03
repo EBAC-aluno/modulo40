@@ -42,4 +42,15 @@ public class PlanetService {
   public void delete(long id) {
     planetRepository.deleteById(id);
   }
+
+  public boolean existsByName(String name) {
+    return planetRepository.existsByName(name);
+  }
+
+  public boolean existsPlanetById(long id) {
+    if (planetRepository.existsById(id)) {
+      return true;
+    }
+    return false;
+  }
 }
