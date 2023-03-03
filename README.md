@@ -2,7 +2,7 @@
 
 This is a RESTful API for managing information about planets.
 
-To set up and run the server, you need to create a MySQL database, add a file `/src/main/resources/application.properties` which the following content, and grant permissions to the MySQL user as well. Don't forget to replace fields like `database name`, `username`, and `password`.
+To set up and run the server, you need to create a MySQL database, add a file `/src/main/resources/application.properties` which the following content, and grant permissions to the MySQL user as well. Don't forget to replace fields like `database name`, `user name`, and `user password`.
 
 ```
 spring.jpa.hibernate.ddl-auto=update    
