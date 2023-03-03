@@ -9,7 +9,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/{database name}
 spring.datasource.username={user name}    
 spring.datasource.password={user password}    
-spring.datasource.driver-class-name =com.mysql.jdbc.Driver    
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 ```
 Now, go to the root project and run the command below to download a specific version of Gradle locally.
 ```sh 
